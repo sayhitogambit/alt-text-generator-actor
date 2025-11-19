@@ -1,0 +1,14 @@
+{
+  "title": "Alt Text Generator Input",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "imageUrl": {"title": "Image URL", "type": "string", "editor": "textfield"},
+    "context": {"title": "Page Context (optional)", "type": "string", "default": ""},
+    "maxLength": {"title": "Max Length (chars)", "type": "integer", "minimum": 50, "maximum": 200, "default": 125},
+    "includeKeywords": {"title": "SEO Keywords", "type": "array", "editor": "stringList", "default": []},
+    "model": {"title": "AI Model", "type": "string", "enum": ["openai/gpt-4o", "google/gemini-2.0-flash-exp:free"], "default": "google/gemini-2.0-flash-exp:free"},
+    "openrouterApiKey": {"title": "OpenRouter API Key", "type": "string", "isSecret": true}
+  },
+  "required": ["imageUrl", "openrouterApiKey"]
+}
