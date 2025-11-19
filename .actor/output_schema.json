@@ -1,0 +1,62 @@
+{
+  "title": "Alt Text Generator Output",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "altText": {
+      "title": "Alt Text",
+      "type": "string",
+      "description": "SEO-optimized alt text for the image",
+      "editor": "textfield"
+    },
+    "longDescription": {
+      "title": "Long Description",
+      "type": "string",
+      "description": "Extended description for accessibility",
+      "editor": "textarea"
+    },
+    "seoKeywords": {
+      "title": "SEO Keywords",
+      "type": "array",
+      "description": "SEO keywords relevant to the image",
+      "editor": "json",
+      "items": {
+        "type": "string"
+      }
+    },
+    "variants": {
+      "title": "Alt Text Variants",
+      "type": "array",
+      "description": "Alternative variations of the alt text",
+      "editor": "json",
+      "items": {
+        "type": "string"
+      }
+    },
+    "imageUrl": {
+      "title": "Image URL",
+      "type": "string",
+      "description": "URL of the analyzed image",
+      "editor": "textfield"
+    },
+    "cost": {
+      "title": "API Cost",
+      "type": "number",
+      "description": "Total API cost in USD",
+      "editor": "number"
+    },
+    "chargePrice": {
+      "title": "Charge Price",
+      "type": "number",
+      "description": "Price charged to user in USD",
+      "editor": "number"
+    },
+    "createdAt": {
+      "title": "Created At",
+      "type": "string",
+      "description": "ISO timestamp of when this was created",
+      "editor": "textfield",
+      "format": "date-time"
+    }
+  }
+}
