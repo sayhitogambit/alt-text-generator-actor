@@ -1,1 +1,1 @@
-{"actorSpecification": 1, "name": "alt-text-generator", "title": "AI Alt Text Generator", "description": "Generate SEO-optimized alt text for images using AI vision models.", "version": "1.0.0", "dockerfile": "./Dockerfile", "input": "./.actor/input_schema.json"}
+{"actorSpecification": 1, "name": "alt-text-generator", "title": "AI Alt Text Generator", "description": "Generate SEO-optimized alt text for images using AI vision models.", "version": "1.0.0", "dockerfile": "./Dockerfile", "input": "./input_schema.json"}
