@@ -4,11 +4,11 @@
   "schemaVersion": 1,
   "properties": {
     "imageUrl": {"title": "Image URL", "type": "string", "description": "URL of the image to generate alt text for", "editor": "textfield"},
-    "context": {"title": "Page Context (optional)", "type": "string", "description": "Context about where the image appears for more relevant alt text", "default": ""},
-    "maxLength": {"title": "Max Length (chars)", "type": "integer", "description": "Maximum character length for the alt text", "minimum": 50, "maximum": 200, "default": 125},
+    "context": {"title": "Page Context (optional)", "type": "string", "description": "Context about where the image appears for more relevant alt text", "editor": "textfield", "default": ""},
+    "maxLength": {"title": "Max Length (chars)", "type": "integer", "description": "Maximum character length for the alt text", "editor": "number", "minimum": 50, "maximum": 200, "default": 125},
     "includeKeywords": {"title": "SEO Keywords", "type": "array", "description": "SEO keywords to incorporate into the alt text", "editor": "stringList", "default": []},
-    "model": {"title": "AI Model", "type": "string", "description": "AI model to use for generation", "enum": ["openai/gpt-4o", "google/gemini-2.0-flash-exp:free"], "default": "google/gemini-2.0-flash-exp:free"},
-    "openrouterApiKey": {"title": "OpenRouter API Key", "type": "string", "description": "Your OpenRouter API key from https://openrouter.ai/keys", "isSecret": true}
+    "model": {"title": "AI Model", "type": "string", "description": "AI model to use for generation", "editor": "select", "enum": ["openai/gpt-4o", "google/gemini-2.0-flash-exp:free"], "default": "google/gemini-2.0-flash-exp:free"},
+    "openrouterApiKey": {"title": "OpenRouter API Key", "type": "string", "description": "Your OpenRouter API key from https://openrouter.ai/keys", "editor": "textfield", "isSecret": true}
   },
   "required": ["imageUrl", "openrouterApiKey"]
 }
